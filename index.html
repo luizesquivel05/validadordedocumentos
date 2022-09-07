@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+    <html lang="pt-br">
+
+    <head>
+    
+        <!--configurações de metadados-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--configurações de link externo-->
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/responsive.css">
+
+        <!--configurações de título da página-->
+        <title>Verificador de documentos.</title>
+        <link rel="icon" type="image/png" href="./imagem/LOGO.png">
+
+    </head>
+
+    <body>
+    
+        <article id="home">
+
+            <header id="cabecario">
+
+                <div>
+                    <img src="./imagem/LOGO.png" class="imagem" height="120" width="120" alt="Aqui tem a logo do site.">
+                </div>
+
+                <div class="navegacao">
+                    <ul class="listadenavegacao">
+                        <li class="item"> <a href="#home">home</a></li>
+                        <li class="item"> <a href="#cpf">cpf</a> </li>
+                        <li class="item"> <a href="#cnpj">cnpj</a> </li>
+                        <li class="item"> <a href="#sobre">sobre</a> </li>
+                    </ul>
+                </div>
+
+            </header>
+
+            <section id="tela1" class="tela">
+
+                <h1 class="textoprincipaltela">
+                    VERIFICADOR DE DOCUMENTOS
+                </h1>
+               
+                <div class="movimentacao">
+                    <a href="#cpf" class="linkmovimentacao"> ver cpf </a>
+                </div>
+               
+                <div class="movimentacao">
+                    <a href="#cnpj" class="linkmovimentacao"> ver cnpj </a>
+                </div>
+               
+                <div class="movimentacao">
+                    <a href="#sobre" class="linkmovimentacao"> ver sobre </a>
+                </div>
+
+            </section>
+
+        </article>
+
+        <article id="cpf">
+
+            <section id="tela2" class="tela">
+
+                <h1 class="textoprincipaltela">
+                    verificar um cpf.
+                </h1>
+
+                <div class="baixo">
+                    <a href="#home" class="linkmovimentacao"> ver home </a>
+                </div>
+
+                <div class="cima">
+                    <a href="#cnpj" class="linkmovimentacao"> ver cnpj </a>
+                </div>
+
+                <div class="lerdados">
+
+                    <h3 class="textoorientacao">
+                        leitura de dados.
+                    </h3>
+
+                    <div id="leitura">
+
+                        <input type="number" name="lerdocumento" id="lerdoc" placeholder="Insira um CPF">
+
+                        <button type="submit" id="envio" onclick="lendoosdados()"> enviar </button>
+
+                    </div>
+
+                </div>
+
+                <div class="sairdados">
+
+                    <h3 class="textoorientacao">
+                        saída de dados.
+                    </h3>
+
+                    <table class="entrega">
+
+                        <thead class="titulos">
+                            <tr>
+                                <th>característica</th>
+                                <th>atributo</th>
+                            </tr>
+                        </thead>
+
+                        <tr>
+                            <td>CPF:</td>
+                            <td id="resp1"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Validade:</td>
+                            <td id="resp2"></td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </article>
+
+        <article id="cnpj">
+
+            <section id="tela3" class="tela">
+
+                <h1 class="textoprincipaltela">
+                    verificar um cnpj.
+                </h1>
+
+                <div class="baixo">
+                    <a href="#cpf" class="linkmovimentacao"> ver cpf </a>
+                </div>
+
+                <div class="cima">
+                    <a href="#sobre" class="linkmovimentacao"> ver sobre </a>
+                </div>
+
+                <div class="lerdados">
+
+                    <h3 class="textoorientacao">
+                        leitura de dados.
+                    </h3>
+
+                    <div id="leitura2">
+
+                        <input type="text" name="lerdocumentoJ" id="lerdocJ" placeholder="Insira um CNPJ">
+
+                        <button type="submit" onclick="lendoosdados2()" > enviar </button>
+
+                    </div>
+
+                </div>
+
+                <div class="sairdados">
+
+                    <h3 class="textoorientacao">
+                        saída de dados.
+                    </h3>
+
+                    <table class="entrega">
+
+                        <thead class="titulos">
+                            <tr>
+                                <th>característica</th>
+                                <th>atributo</th>
+                            </tr>
+                        </thead>
+
+                        <tr>
+                            <td>CNPJ:</td>
+                            <td id="resp4"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Validade:</td>
+                            <td id="resp5"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Tipo:</td>
+                            <td id="resp6"></td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+        </article>
+
+        <article id="sobre">
+
+            <section id="tela4" class="tela">
+
+                <h1 class="textoprincipaltela">
+                    sobre
+                </h1>
+
+                <h3 class="textosobre">
+                    DESENVOLVIDO POR ESQUIZANDO, O PRESENTE SITE, EM SUA VERSÃO PRIMÁRIA (MVP), OBJETIVA APRESENTAR AO PÚBLICO UMA FERRAMENTA SIMPLES E OBJETIVA QUE FAZ A LEITURA DE DADOS E ENTREGA SE EQUIVALE A UM NÚMERO DE DOCUMENTO VÁLIDO.
+                </h3>
+
+                <div class="movimentacao">
+                    <a href="#home" class="linkmovimentacao"> ver home </a>
+                </div>
+               
+                <div class="movimentacao">
+                    <a href="#cpf" class="linkmovimentacao"> ver cpf </a>
+                </div>
+               
+                <div class="movimentacao">
+                    <a href="#cnpj" class="linkmovimentacao"> ver cnpj </a>
+                </div>
+
+            </section>
+
+        </article>
+
+        <!--trazer o JS-->
+        <script src="./js/script.js"></script>
+
+</body>
+</html>

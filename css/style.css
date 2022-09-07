@@ -1,0 +1,192 @@
+/*
+Descrições gerais para o CSS:
+
+Fonte usada - montserrat;
+Títulos maiores (h1) - 96px;
+Títulos médios (h3) - 80px;
+Títulos menores (h6) - 64px;
+Paragrafos (p e a) - 40px.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+html, body {
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #E8CAA4;
+    background-color: #CC2A41;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+h1 {
+    font-size: 96px;
+}
+h3 {
+    font-size: 80px;
+}
+h6 {
+    font-size: 64px;
+}
+p {
+    font-size: 40px;
+}
+a {
+    font-size: 40px;
+    text-decoration: none;
+    color: #E8CAA4;
+}
+
+/*
+CONFIGURAR CABECARIO.
+*/
+header {
+    width: 100%;
+    height: 20%;
+    background-color: #351330;
+}
+
+.navegacao {
+    margin-top: -42px;
+    font-size: 40px;
+}
+
+.listadenavegacao .item {
+    margin-left: 180px;
+    display: inline-block;;
+}
+
+a:hover {
+    background-color: #E8CAA4;
+    color: #CC2A41;
+}
+
+/*
+CONFIGURAR TELAS
+*/
+.tela {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*
+CONFIGURAR PRIMEIRA TELA
+*/
+#tela1 {
+    margin-block-end: 100%;
+}
+
+.textoprincipaltela {
+    margin-top: 1%;
+    text-align: center;
+    font-size: 40px;
+}
+
+.movimentacao {
+    background-color: #E8CAA4;
+    color: #CC2A41;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 35%;
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    border-radius: 10%;
+    font-size: 60px;
+}
+
+.linkmovimentacao {
+    color: #CC2A41;
+}
+
+.linkmovimentacao:hover {
+    color: #E8CAA4;
+    background-color: #CC2A41;
+}
+
+/*
+CONFIGURAR SEGUNDA TELA
+*/
+#tela2 {
+    margin-block-end: 100%;
+}
+
+.lerdados {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #64908A;
+    color: #FFFFFF;
+}
+
+#leitura {
+    margin-left: 30%;
+}
+
+.sairdados {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #64908A;
+    color: #FFFFFF;
+}
+
+.entrega tr td  {
+    margin-left: 10%;
+    width: 100%;
+    border: #351330 solid 2px;
+}
+
+/*
+CONFIGURAR TERCEIRA TELA
+*/
+#tela3 {
+    margin-block-end: 100%;
+}
+
+#leitura2 {
+    margin-left: 30%;
+}
+
+/*
+CONFIGURAR QUARTA TELA
+*/
+#tela4 {
+    margin-block-end: 100%;
+}
+
+.cima {
+    background-color: #E8CAA4;
+    color: #CC2A41;
+    text-align: center;
+    margin-left: 60%;
+    width: 10%;
+    height: auto;
+    display: inline-block;
+    border-radius: 10%;
+    font-size: 20px;
+}
+
+.baixo {
+    background-color: #E8CAA4;
+    color: #CC2A41;
+    text-align: center;
+    margin-left: 10%;
+    width: 10%;
+    height: auto;
+    display: inline-block;
+    border-radius: 10%;
+    font-size: 20px;
+}
+
+.textosobre {
+    font-size: 35px;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+}
