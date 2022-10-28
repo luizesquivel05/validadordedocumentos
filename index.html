@@ -35,6 +35,7 @@
                         <li class="item"> <a href="#home">home</a></li>
                         <li class="item"> <a href="#cpf">cpf</a> </li>
                         <li class="item"> <a href="#cnpj">cnpj</a> </li>
+                        <li class="item"> <a href="#cep">cep</a> </li>
                         <li class="item"> <a href="#sobre">sobre</a> </li>
                     </ul>
                 </div>
@@ -53,6 +54,10 @@
                
                 <div class="movimentacao">
                     <a href="#cnpj" class="linkmovimentacao"> ver cnpj </a>
+                </div>
+
+                <div class="movimentacao">
+                    <a href="#cep" class="linkmovimentacao"> ver cep </a>
                 </div>
                
                 <div class="movimentacao">
@@ -141,7 +146,7 @@
                 </div>
 
                 <div class="cima">
-                    <a href="#sobre" class="linkmovimentacao"> ver sobre </a>
+                    <a href="#cep" class="linkmovimentacao"> ver cep </a>
                 </div>
 
                 <div class="lerdados">
@@ -199,6 +204,87 @@
 
         </article>
 
+        <article id="cep">
+
+            <section id="tela4" class="tela">
+
+                <h1 class="textoprincipaltela">
+                    verificar um cep.
+                </h1>
+
+                <div class="baixo">
+                    <a href="#cnpj" class="linkmovimentacao"> ver cnpj </a>
+                </div>
+
+                <div class="cima">
+                    <a href="#sobre" class="linkmovimentacao"> ver sobre </a>
+                </div>
+
+                <div class="lerdados">
+
+                    <h3 class="textoorientacao">
+                        leitura de dados.
+                    </h3>
+
+                    <div id="leitura2">
+
+                        <input type="int" name="lerdocumentoCEP" id="lerdocCEP" placeholder="Insira um CEP">
+
+                        <button type="submit" onclick="lendoosdados3()" > enviar </button>
+
+                    </div>
+
+                </div>
+
+                <div class="sairdados">
+
+                    <h3 class="textoorientacao">
+                        saída de dados.
+                    </h3>
+
+                    <table class="entrega">
+
+                        <thead class="titulos">
+                            <tr>
+                                <th>característica</th>
+                                <th>atributo</th>
+                            </tr>
+                        </thead>
+
+                        <tr>
+                            <td>cep:</td>
+                            <td id="resp7"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Validade:</td>
+                            <td id="resp8"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Região:</td>
+                            <td id="resp9"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Estado:</td>
+                            <td id="resp10"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Localidade:</td>
+                            <td id="resp11"></td>
+                        </tr>
+
+                    </table>
+
+                </div>
+                <h3 class="obs"> OBSERVAÇÃO: OS CEPS DOS ESTADOS: GOIÁS, RONDÔNIA E ACRE GERAM DESCONTINUIDADE, NÃO SENDO POSSÍVEL VERIFICAR SUA REGIÃO DE UMA FORMA GENERALIZADA.</h3>
+            </section>
+
+
+        </article>
+
         <article id="sobre">
 
             <section id="tela4" class="tela">
@@ -208,7 +294,7 @@
                 </h1>
 
                 <h3 class="textosobre">
-                    DESENVOLVIDO POR ESQUIZANDO, O PRESENTE SITE, EM SUA VERSÃO PRIMÁRIA (MVP), OBJETIVA APRESENTAR AO PÚBLICO UMA FERRAMENTA SIMPLES E OBJETIVA QUE FAZ A LEITURA DE DADOS E ENTREGA SE EQUIVALE A UM NÚMERO DE DOCUMENTO VÁLIDO.
+                    DESENVOLVIDO POR <a href="https://luizesquivel05.github.io/esquizando/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"> ESQUIZANDO</a>, O PRESENTE SITE, EM SUA VERSÃO PRIMÁRIA (MVP), OBJETIVA APRESENTAR AO PÚBLICO UMA FERRAMENTA SIMPLES E OBJETIVA QUE FAZ A LEITURA DE DADOS E ENTREGA SE EQUIVALE A UM NÚMERO DE DOCUMENTO VÁLIDO.
                 </h3>
 
                 <div class="movimentacao">
@@ -223,12 +309,16 @@
                     <a href="#cnpj" class="linkmovimentacao"> ver cnpj </a>
                 </div>
 
+                <div class="movimentacao">
+                    <a href="#cep" class="linkmovimentacao"> ver cep </a>
+                </div>
+
             </section>
 
         </article>
 
-        <!--trazer o JS-->
-        <script src="./js/script.js"></script>
+    </body>
 
-</body>
+    <!--trazer o JS-->
+    <script src="./js/script.js"></script>
 </html>

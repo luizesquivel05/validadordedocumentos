@@ -55,7 +55,7 @@ header {
 }
 
 .listadenavegacao .item {
-    margin-left: 180px;
+    margin-left: 140px;
     display: inline-block;;
 }
 
@@ -96,7 +96,7 @@ CONFIGURAR PRIMEIRA TELA
     height: auto;
     display: inline-block;
     border-radius: 10%;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .linkmovimentacao {
@@ -184,9 +184,16 @@ CONFIGURAR QUARTA TELA
 }
 
 .textosobre {
-    font-size: 35px;
+    font-size: 30px;
     text-align: justify;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 1%;
+}
+
+.obs {
+    text-align:justify;
+    margin-left: 30%;
+    margin-top: 1%;
+    width: 30%;
 }
